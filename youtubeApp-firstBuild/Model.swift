@@ -23,7 +23,8 @@ class Model {
         let session = URLSession.shared
         
         // Get a data task from the URLSession object
-        let dataTask = session.dataTask(with: url!) { (data, responce, error) in
+        let dataTask = session.dataTask(with: url!) { (data, responce, error)
+            in
             
             //Check if there were any errors
             if error != nil || data == nil {
